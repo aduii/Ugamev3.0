@@ -7,6 +7,17 @@ from Classes import Tablero
 mainClock = pg.time.Clock()
 pg.init()
 
+# Definir colores RGB
+black = (0, 0, 0)
+white = (255, 255, 255)
+green = (0, 255, 0)
+red = (255, 0, 0)
+blue = (0, 0, 255)
+# Defnir Tamano pantalla
+size = (1280, 720)
+
+# Ventana principal
+screen = pg.display.set_mode(size)
 title = pg.display.set_caption("Ubongo UPC")
 clock = pg.time.Clock()
 font = pg.font.SysFont(None, 20)
@@ -40,7 +51,10 @@ class Cursor(pg.Rect):
 
 class Boton(pg.sprite.Sprite):
     def __init__(self, imagen1, imagen2, x=200, y=200):
-        self.imect()
+        self.imagen_normal = imagen1
+        self.imagen_seleccion = imagen2
+        self.imagen_actual = self.imagen_normal
+        self.rect = self.imagen_actual.get_rect()
         self.rect.left, self.rect.top = (x, y)
 
     def update(self, pantalla, cursor):
