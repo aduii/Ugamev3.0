@@ -1,5 +1,7 @@
 import random
 import graphviz
+
+
 class Grafo(object):
     def __init__(self, n):
         self.G = graphviz.Digraph()
