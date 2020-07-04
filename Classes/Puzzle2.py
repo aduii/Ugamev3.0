@@ -62,6 +62,8 @@ def main():
     rectangle12_draging = False
     while not hecho:
         for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                 hecho  = True
             if event.type == pygame.QUIT:
                 hecho  = True
             elif event.type == pygame.MOUSEBUTTONDOWN:

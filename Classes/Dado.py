@@ -6,7 +6,9 @@ imagen3 = pygame.image.load("Resources/CarasImages/cara3.png")
 imagen4 = pygame.image.load("Resources/CarasImages/cara4.png")
 imagen5 = pygame.image.load("Resources/CarasImages/cara5.png")
 imagen6 = pygame.image.load("Resources/CarasImages/cara6.png")
-def dice(n,screen):
+
+
+def dice(n, screen):
     if n == 1:
         screen.blit(imagen1, (620, 580))
     elif n == 2:
@@ -19,6 +21,7 @@ def dice(n,screen):
         screen.blit(imagen5, (620, 580))
     elif n == 6:
         screen.blit(imagen6, (620, 580))
+
 
 def puzzle(enum):
     if (enum == 1):

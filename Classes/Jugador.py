@@ -16,7 +16,7 @@ class player(object):
         self.ruta.append(fila)
         self.ruta.append(fila + 6)
         self.colores.append(od.colores[fila])
-        self.contarGema(fila,od)
+        self.contarGema(fila, od)
         self.colores.append(od.colores[fila + 6])
         self.contarGema(fila + 6, od)
         self.fijarprioridad()
@@ -37,8 +37,6 @@ class player(object):
 
     def conteo(self):
         return self.prioridad
-
-
 
     def fijarprioridad(self):
         if self.prioridad < self.amarillos:
@@ -63,4 +61,3 @@ class player(object):
     def mostrar(self):
         print(self.ruta)
         print(self.prioridad)
-

@@ -1,6 +1,6 @@
 import pygame, sys
 import random
-#from Classes import Gemas,Dado,Grafo,Jugador
+# from Classes import Gemas,Dado,Grafo,Jugador
 import Classes.Gemas as Gemas
 import Classes.Grafo as Grafo
 import Classes.Jugador as Jugador
@@ -19,7 +19,7 @@ font = pygame.font.SysFont(None, 30)
 tableroImg = pygame.image.load("Resources/MainImages/ubongoTablero.png")
 finalImg = pygame.image.load('Resources/MainImages/_final.png')
 final2Img = pygame.image.load('Resources/MainImages/_final 2.png')
-amarillaImg=Gemas.amarillaImg
+amarillaImg = Gemas.amarillaImg
 azulImg = Gemas.azulImg
 marronImg = Gemas.marronImg
 moradaImg = Gemas.moradaImg
@@ -85,6 +85,8 @@ j1 = Jugador.player()
 j2 = Jugador.player()
 j3 = Jugador.player()
 j4 = Jugador.player()
+
+
 def FinalJuego1():
     running = True
     while running:
@@ -103,6 +105,7 @@ def FinalJuego1():
         pygame.display.update()
         mainClock.tick(60)
 
+
 def FinalJuego2():
     running = True
     while running:
@@ -120,6 +123,8 @@ def FinalJuego2():
 
         pygame.display.update()
         mainClock.tick(60)
+
+
 # -------------------------------------------------------
 class TableroUbongo(object):
     def __init__(self):
@@ -379,8 +384,6 @@ class TableroUbongo(object):
             Dado.dice(n, screen)
             pygame.display.update()
             mainClock.tick(60)
-
-
 
 Juego = TableroUbongo()
 
