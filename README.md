@@ -7,7 +7,7 @@
 
 # Demostración:
 ## Pantalla Principal:
-![](https://ibb.co/C6d1sBC)
+<img src="https://i.ibb.co/BGDzKLW/unknown.png" alt="unknown" border="0">
 ## Jugar:
 
 ## Instrucciones:
