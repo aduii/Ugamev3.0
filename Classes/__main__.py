@@ -70,10 +70,6 @@ btn_Instrucciones = Boton(btn1_Instrucciones, btn2_Instrucciones, 550, 250)
 btn_Creditos = Boton(btn1_Creditos, btn2_Creditos, 585, 400)
 btn_Salir = Boton(btn1_Salir, btn2_Salir, 610, 550)
 
-
-# -------------------#
-
-
 def inicio():
     screen.blit(imgInicio, (0, 0))
 
@@ -106,26 +102,9 @@ def run():
 
         screen.fill((0, 0, 0))
         inicio()
-        # draw_text('main menu', font, (255, 255, 255), screen, 20, 20)
+
         mx, my = pg.mouse.get_pos()
 
-        # button_jugar = pg.Rect(860, 180, 145, 50)
-        # button_instrucciones = pg.Rect(760, 290, 330, 50)
-        # button_creditos = pg.Rect(825, 390, 205, 50)
-        # button_salir = pg.Rect(880, 510, 125, 50)
-        # if button_jugar.collidepoint((mx, my)):
-        #     if click:
-        #         game()
-        # if button_instrucciones.collidepoint((mx, my)):
-        #     if click:
-        #         instructions()
-        # if button_creditos.collidepoint((mx, my)):
-        #     if click:
-        #         credits()
-        # if button_salir.collidepoint((mx, my)):
-        #     if click:
-        #         pg.quit()
-        #         sys.exit()
         for event in pg.event.get():
             if event.type == pg.MOUSEBUTTONDOWN:
                 if cursor1.colliderect(btn_Jugar.rect):
@@ -140,30 +119,12 @@ def run():
             if event.type == pg.QUIT:
                 sys.exit()
 
-        # pygame.draw.rect(screen, (255, 0, 0), button_1)
-        # pygame.draw.rect(screen, (255, 0, 0), button_2)
-        # pygame.draw.rect(screen, (255, 0, 0), button_3)
-        # pygame.draw.rect(screen, (255, 0, 0), button_4)
-
         mainClock.tick(60)
         cursor1.update()
         btn_Jugar.update(screen, cursor1)
         btn_Instrucciones.update(screen, cursor1)
         btn_Creditos.update(screen, cursor1)
         btn_Salir.update(screen, cursor1)
-
-        # click = False
-        # for event in pg.event.get():
-        #     if event.type == QUIT:
-        #         pg.quit()
-        #         sys.exit()
-        #     if event.type == KEYDOWN:
-        #         if event.key == K_ESCAPE:
-        #             pg.quit()
-        #             sys.exit()
-        #     if event.type == MOUSEBUTTONDOWN:
-        #         if event.button == 1:
-        #             click = True
 
         pg.display.update()
 
@@ -198,7 +159,6 @@ def game():
         pg.draw.rect(screen, (255, 0, 0), button_j4)
 
         click = False
-        # draw_text('game', font, (255, 255, 255), screen, 20, 20)
         for event in pg.event.get():
             if event.type == QUIT:
                 pg.quit()

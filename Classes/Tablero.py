@@ -377,10 +377,10 @@ class TableroUbongo(object):
             pygame.draw.rect(screen, (255, 0, 0), button_fila5)
             pygame.draw.rect(screen, (255, 0, 0), button_fila6)
             if self.tiempo > 0:
-                draw_text(str(self.tiempo), font, (255, 255, 255), screen, 205, 67)
+                draw_text(str(self.tiempo), font, (0, 0, 0), screen, 215, 55)
             else:
-                draw_text(' se acabó el tiempo ', font, (255, 255, 255), screen, 200, 67)
-            draw_text(str(self.ronda), font, (255, 255, 255), screen, 975, 67)
+                draw_text('se acabó el tiempo', font, (255, 255, 255), screen, 200, 67)
+            draw_text(str(self.ronda), font, (0, 0, 0), screen, 1000, 55)
             Dado.dice(n, screen)
             pygame.display.update()
             mainClock.tick(60)
