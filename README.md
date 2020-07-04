@@ -3,7 +3,7 @@
 ### Integrantes:
 * Escudero Perla, Gonzalo
 * Juep Sifuentes, Alex
-* Pachari Vega, Víctor
+* Pachari Vega, Victor
 
 # Demostración:
 ## Pantalla Principal:
