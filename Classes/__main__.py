@@ -3,6 +3,7 @@ import sys
 from pygame.locals import *
 from Classes import Tablero
 
+
 mainClock = pg.time.Clock()
 pg.init()
 
