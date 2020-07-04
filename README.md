@@ -1,9 +1,9 @@
 # Ugamev3.0
 ## UGONGO :sunglasses:
 ### Integrantes:
-* Escudero Perla, Gonzalo
 * Juep Sifuentes, Alex
 * Pachari Vega, Victor
+* Escudero Perla, Gonzalo
 
 # Demostración:
 ## Pantalla Principal:
