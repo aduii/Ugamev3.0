@@ -7,17 +7,6 @@ from Classes import Tablero
 mainClock = pg.time.Clock()
 pg.init()
 
-# Definir colores RGB
-black = (0, 0, 0)
-white = (255, 255, 255)
-green = (0, 255, 0)
-red = (255, 0, 0)
-blue = (0, 0, 255)
-# Defnir Tamano pantalla
-size = (1280, 720)
-
-# Ventana principal
-screen = pg.display.set_mode(size)
 title = pg.display.set_caption("Ubongo UPC")
 clock = pg.time.Clock()
 font = pg.font.SysFont(None, 20)
