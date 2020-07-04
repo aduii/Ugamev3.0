@@ -40,10 +40,7 @@ class Cursor(pg.Rect):
 
 class Boton(pg.sprite.Sprite):
     def __init__(self, imagen1, imagen2, x=200, y=200):
-        self.imagen_normal = imagen1
-        self.imagen_seleccion = imagen2
-        self.imagen_actual = self.imagen_normal
-        self.rect = self.imagen_actual.get_rect()
+        self.imect()
         self.rect.left, self.rect.top = (x, y)
 
     def update(self, pantalla, cursor):
