@@ -1,5 +1,5 @@
 # Ugamev3.0
-## UGONGO :sunglasses:
+## UBONGO :sunglasses:
 ### Integrantes:
 * Juep Sifuentes, Alex
 * Pachari Vega, Victor
