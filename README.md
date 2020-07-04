@@ -8,7 +8,7 @@
 # Demostración:
 ## Pantalla Principal:
 ![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+Format: ![Alt Text](https://ibb.co/C6d1sBC)
 ## Jugar:
 
 ## Instrucciones:
