@@ -16,7 +16,23 @@ class player(object):
         self.ruta.append(fila)
         self.ruta.append(fila + 6)
         self.colores.append(od.colores[fila])
-        self.co
+        self.contarGema(fila, od)
+        self.colores.append(od.colores[fila + 6])
+        self.contarGema(fila + 6, od)
+        self.fijarprioridad()
+
+    def contarGema(self, fila, od):
+        if od.colores[fila] == 1:
+            self.amarillos = self.amarillos + 1
+        elif od.colores[fila] == 2:
+            self.azul = self.azul + 1
+        elif od.colores[fila] == 3:
+            self.marron = self.marron + 1
+        elif od.colores[fila] == 4:
+            self.morada = self.morada + 1
+        elif od.colores[fila] == 5:
+            self.roja = self.roja + 1
+        elif od.colores[fila] == 6:
             self.verde = self.verde + 1
 
     def conteo(self):
