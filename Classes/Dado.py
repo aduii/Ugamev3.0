@@ -8,7 +8,10 @@ imagen5 = pygame.image.load("Resources/CarasImages/cara5.png")
 imagen6 = pygame.image.load("Resources/CarasImages/cara6.png")
 
 
-d
+def dice(n, screen):
+    if n == 1:
+        screen.blit(imagen1, (620, 580))
+    elif n == 2:
         screen.blit(imagen2, (620, 580))
     elif n == 3:
         screen.blit(imagen3, (620, 580))
